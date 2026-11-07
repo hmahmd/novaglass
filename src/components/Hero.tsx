@@ -1,5 +1,6 @@
-import React from 'react';
-import { ArrowDown, Download, Sparkles, Compass, Eye, ShieldCheck } from 'lucide-react';
+import React, { useState } from 'react';
+import { ArrowDown, Download, Sparkles, Compass, Eye, ShieldCheck, FileText, X } from 'lucide-react';
+import { openOrDownloadResumePdf } from '../data/resumeData';
 
 interface HeroProps {
   onExploreWork: () => void;
@@ -115,20 +116,12 @@ export const Hero: React.FC<HeroProps> = ({ onExploreWork, onOpenContact }) => {
                 </a>
 
                 <button
-                  onClick={() => {
-                    const dummyPdfContent = 'Nova Glass - Experience Architecture Portfolio & Resume 2026';
-                    const blob = new Blob([dummyPdfContent], { type: 'text/plain' });
-                    const url = window.URL.createObjectURL(blob);
-                    const a = document.createElement('a');
-                    a.href = url;
-                    a.download = 'Nova-Glass-Architect-CV-2026.txt';
-                    a.click();
-                    window.URL.revokeObjectURL(url);
-                  }}
-                  className="w-full sm:w-auto px-4 py-2.5 rounded-xl sm:rounded-2xl text-xs font-medium text-slate-500 hover:text-slate-800 transition-colors flex items-center justify-center gap-1.5 cursor-pointer hover:bg-white/60 shrink-0"
-                  title="Download Curriculum Vitae"
+                  type="button"
+                  onClick={() => openOrDownloadResumePdf('Hafiz_Muhammad_Ahmed_Resume.pdf')}
+                  className="w-full sm:w-auto px-4 py-2.5 rounded-xl sm:rounded-2xl text-xs font-medium text-slate-600 hover:text-slate-900 transition-colors flex items-center justify-center gap-1.5 cursor-pointer hover:bg-white/80 border border-slate-200/60 shadow-xs shrink-0"
+                  title="Download Hafiz Muhammad Ahmed Resume PDF"
                 >
-                  <Download className="w-3.5 h-3.5 text-slate-400" />
+                  <Download className="w-3.5 h-3.5 text-blue-600" />
                   <span>Download CV</span>
                 </button>
               </div>

@@ -1,0 +1,4 @@
+/resume.pdf /resume.pdf 200
+/Hafiz_Muhammad_Ahmed_Resume.pdf /Hafiz_Muhammad_Ahmed_Resume.pdf 200
+/assets/* /assets/:splat 200
+/* /index.html 200
