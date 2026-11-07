@@ -4,20 +4,20 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?logo=typescript)](https://www.typescriptlang.org/)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-v4.0-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
 [![Vite](https://img.shields.io/badge/Vite-8.0-646CFF?logo=vite)](https://vitejs.dev/)
-[![Live Demo](https://img.shields.io/badge/Demo-novaportfolio.netlify.app-00C7B7?logo=netlify)](https://novaportfolio.netlify.app)
+[![Live Demo](https://img.shields.io/badge/Demo-samplenovaportfolio.netlify.app-00C7B7?logo=netlify)](https://samplenovaportfolio.netlify.app/)
 
 A modern, high-performance portfolio and experience architecture studio website. Crafted with futuristic glassmorphic UI, refractive light physics, tactile micro-interactions, and 100% responsive precision across all mobile and desktop devices.
 
 ---
 
 ## 🌐 Live Preview
-- **Live URL:** [https://novaportfolio.netlify.app](https://novaportfolio.netlify.app)
+- **Live Website:** [https://samplenovaportfolio.netlify.app/](https://samplenovaportfolio.netlify.app/)
 
 ---
 
 ## 🚀 Key Highlights & Features
 
-- **Liquid Glass Aesthetics:** Frosted glass panels, specular edge reflections, and dynamic radial lighting shaders without performance lag.
+- **Liquid Glass Aesthetics:** Frosted glass panels, specular edge reflections, and dynamic ambient lighting shaders without performance lag.
 - **Flawless Mobile Responsiveness:** Engineered mobile-first with zero horizontal overflow, thumb-friendly touch targets, and a floating action dock.
 - **Featured Case Studies:** Interactive portfolio showcase with deep-dive inspection drawers, architecture challenge breakdowns, and measurable impact metrics.
 - **Interactive Bento Grid:**
@@ -57,7 +57,6 @@ A modern, high-performance portfolio and experience architecture studio website.
    ```bash
    npm run dev
    ```
-   Open `http://localhost:3000` or `http://localhost:5173` in your browser.
 
 4. **Production build:**
    ```bash
@@ -75,4 +74,4 @@ A modern, high-performance portfolio and experience architecture studio website.
 ---
 
 ## 📄 License
-This project is open-source under the MIT License.
+Free Open Source
