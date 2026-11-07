@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowUp, Globe } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const [timeSF, setTimeSF] = useState('');
@@ -36,21 +36,21 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="border-t border-slate-200/70 bg-white/50 backdrop-blur-md pt-12 pb-16 relative z-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-12 border-b border-slate-200/60">
+    <footer className="border-t border-slate-200/70 bg-white/50 backdrop-blur-md pt-10 pb-20 sm:pb-14 relative z-10 w-full max-w-full">
+      <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-8 sm:pb-10 border-b border-slate-200/60">
           {/* Brand Wordmark */}
-          <div className="space-y-1">
-            <a href="#" className="font-display font-extrabold text-xl text-slate-900 tracking-tight">
+          <div className="space-y-0.5">
+            <a href="#" className="font-display font-extrabold text-lg sm:text-xl text-slate-900 tracking-tight">
               NOVA GLASS
             </a>
-            <p className="text-xs text-slate-500 font-mono">
+            <p className="text-[11px] sm:text-xs text-slate-500 font-mono">
               Digital Designer &amp; Experience Architect
             </p>
           </div>
 
           {/* Navigation Links Mirror */}
-          <nav className="flex flex-wrap items-center gap-6 text-xs font-medium text-slate-600">
+          <nav className="flex flex-wrap items-center gap-4 sm:gap-6 text-xs font-medium text-slate-600">
             <a href="#work" className="hover:text-blue-600 transition-colors">Work</a>
             <a href="#about" className="hover:text-blue-600 transition-colors">About</a>
             <a href="#services" className="hover:text-blue-600 transition-colors">Services</a>
@@ -60,7 +60,7 @@ export const Footer: React.FC = () => {
           </nav>
 
           {/* Live Studio Clocks */}
-          <div className="flex items-center gap-4 text-xs font-mono text-slate-500">
+          <div className="flex items-center gap-3 sm:gap-4 text-[11px] sm:text-xs font-mono text-slate-500">
             <div className="flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-slate-400" />
               <span>SF {timeSF || '08:30'}</span>
@@ -74,20 +74,20 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom copyright & back to top */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 font-mono">
+        <div className="pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left text-[11px] sm:text-xs text-slate-400 font-mono">
           <div>
-            &copy; {new Date().getFullYear()} Nova Glass Experience Architecture. All rights reserved.
+            &copy; {new Date().getFullYear()} Nova Glass Experience Architecture.
           </div>
 
-          <div className="flex items-center gap-6">
-            <span>Built with React, TypeScript &amp; Tailwind CSS</span>
+          <div className="flex items-center gap-4">
+            <span className="text-[10px] sm:text-[11px]">React · TypeScript · Tailwind</span>
             <button
               onClick={scrollToTop}
               aria-label="Back to top"
-              className="p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors flex items-center gap-1 cursor-pointer"
+              className="p-1.5 sm:p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors flex items-center gap-1 cursor-pointer"
             >
               <ArrowUp className="w-3.5 h-3.5" />
-              <span className="text-[11px] font-semibold">Top</span>
+              <span className="text-[10px] sm:text-[11px] font-semibold">Top</span>
             </button>
           </div>
         </div>
